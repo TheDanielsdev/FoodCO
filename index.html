@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Design</title>
+    <title>FoodCO.</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="dark">
 
     <header>
         <a href="#" class="logo">Food<span>CO.</span></a>
@@ -29,7 +29,7 @@
         <div class="content">
             <h2>Always Good Food</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vel suscipit rem, vero accusamus ab eligendi? Dolores dolor nemo repellendus aliquam consequuntur fugit doloribus, doloremque deserunt, voluptatem sunt harum quod?</p>
-            <a href="#" class="btn">Our Menu</a>
+            <a href="#" class="btn" onclick="darken()">Our Menu</a>
         </div>
 
     </section>
@@ -270,6 +270,11 @@
             const navigation = document.querySelector('.navigation');
             menuToggle.classList.toggle('active')
             navigation.classList.toggle('active');
+        }
+
+        function darken() {
+            const dark = document.querySelector('.dark');
+            dark.classList.toggle('darker')
         }
     </script>
 </body>
